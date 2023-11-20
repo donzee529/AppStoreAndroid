@@ -1,3 +1,6 @@
+![image](https://raw.githubusercontent.com/AshiVered/support-israel-banner/main/assets/support-israel-banner.jpg)
+
+
 based on https://github.com/bishwassagar/Android-Webview-App
 # Android-Root-Market
 AppMarket for Android. the app installing apps via shell comands.(need root).
