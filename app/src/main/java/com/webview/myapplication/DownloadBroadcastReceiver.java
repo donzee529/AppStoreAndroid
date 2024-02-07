@@ -23,7 +23,7 @@ public class DownloadBroadcastReceiver extends BroadcastReceiver {
                 Process su = Runtime.getRuntime().exec("su");
                 DataOutputStream outputStream = new DataOutputStream(su.getOutputStream());
 
-                outputStream.writeBytes("su -c mv /sdcard/download/"+ MainActivity.appName     +" /data/local/tmp/file.apk && su -c pm install /data/local/tmp/file.apk && su -c rm /data/local/tmp/file.apk");
+                outputStream.writeBytes("su -c mv /sdcard/download/"+ MainActivity.appName     +".bin /data/local/tmp/file.apk && su -c pm install /data/local/tmp/file.apk");
                 outputStream.flush();
 
                 outputStream.writeBytes("exit\n");

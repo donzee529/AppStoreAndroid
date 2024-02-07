@@ -64,6 +64,15 @@ public class MainActivity extends Activity {
         mWebView = findViewById(R.id.activity_main_webview);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setDomStorageEnabled(true);
+        webSettings.setLoadWithOverviewMode(true);
+        webSettings.setUseWideViewPort(true);
+        webSettings.setBuiltInZoomControls(true);
+        webSettings.setDisplayZoomControls(false);
+        webSettings.setSupportZoom(true);
+        webSettings.setDefaultTextEncodingName("utf-8");
+        webSettings.setPluginState(WebSettings.PluginState.ON);
+        webSettings.setAllowFileAccess(false);
         mWebView.setWebViewClient(new HelloWebViewClient());
         mWebView.setDownloadListener((url, userAgent, contentDisposition, mimeType, contentLength) -> {
             Uri source = Uri.parse(url);
@@ -82,7 +91,7 @@ public class MainActivity extends Activity {
             dm.enqueue(request);
             Toast.makeText(this, R.string.downloading, Toast.LENGTH_LONG).show();
         });
-        mWebView.loadUrl("https://yourdomain.com"); //Replace The Link Here
+        mWebView.loadUrl("https://showhaim.github.io/showstore"); //Replace The Link Here
     }
 
     @Override
