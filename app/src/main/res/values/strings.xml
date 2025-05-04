@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">App Market</string>
-    <string name="blocked_page">this site is not allowed!</string>
-    <string name="downloading">downloading app...</string>
+    <string name="app_name">KE App Store</string>
+    <string name="blocked_page">This site is not allowed!</string>
+    <string name="downloading">Downloading App...</string>
 </resources>
