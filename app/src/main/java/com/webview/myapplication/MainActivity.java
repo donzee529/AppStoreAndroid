@@ -91,7 +91,7 @@ public class MainActivity extends Activity {
             dm.enqueue(request);
             Toast.makeText(this, R.string.downloading, Toast.LENGTH_LONG).show();
         });
-        mWebView.loadUrl("https://yourdomain.com"); //Replace The Link Here
+        mWebView.loadUrl("https://donzee529.github.io/appstore.github.io/"); //Replace The Link Here
     }
 
     @Override
